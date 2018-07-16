@@ -28,7 +28,7 @@
 					Switch="-t"
 				/>
 				<StringProperty
-					Name="Output"
+					Name="OutputFileName"
 					DisplayName="Output file name"
 					Description="Specify output filename"
 					Switch="-o[value]"

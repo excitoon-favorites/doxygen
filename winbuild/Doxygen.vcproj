@@ -409,7 +409,7 @@
 						Name="Lex"
 						CommandLine="flex -PcppExpYY -t $(InputDir)constexp.l &gt;$(InputDir)ce_lex.cpp"
 						AdditionalDependencies="$(InputDir)constexp.l"
-						Output="$(InputDir)ce_lex.cpp"
+						OutputFileName="$(InputDir)ce_lex.cpp"
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -419,7 +419,7 @@
 						Name="Lex"
 						CommandLine="flex  -PcppExpYY -t $(InputDir)constexp.l &gt;$(InputDir)ce_lex.cpp"
 						AdditionalDependencies="$(InputDir)constexp.l"
-						Output="$(InputDir)ce_lex.cpp"
+						OutputFileName="$(InputDir)ce_lex.cpp"
 					/>
 				</FileConfiguration>
 			</File>
