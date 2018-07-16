@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup
+    Condition="'$(LexBeforeTargets)' == '' and '$(LexAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <LexBeforeTargets>Midl</LexBeforeTargets>
+    <LexAfterTargets>CustomBuild</LexAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LexDependsOn
+      Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(LexDependsOn)</LexDependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Lex>
+      <Stdout>False</Stdout>
+      <OutputFileName>%(RootDir)%(Directory)%(Filename).cpp</OutputFileName>
+      <CommandLineTemplate>flex [AllOptions] [AdditionalOptions] [inputs]</CommandLineTemplate>
+      <Outputs>%(RootDir)%(Directory)/%(Filename).cpp</Outputs>
+      <ExecutionDescription>Executing Lex for %(RootDir)%(Directory)/%(Filename).cpp ...</ExecutionDescription>
+      <ShowOnlyRuleProperties>false</ShowOnlyRuleProperties>
+    </Lex>
+  </ItemDefinitionGroup>
+</Project>

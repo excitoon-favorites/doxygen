@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77C9C2D3-EA3F-3D59-8B4C-0ED852890172}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 -Zm200 -w34100 -w34189 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Qt\4.4.3\include\QtCore;..\..\..\Qt\4.4.3\include\QtCore;..\..\..\Qt\4.4.3\include\QtGui;..\..\..\Qt\4.4.3\include\QtGui;..\..\..\Qt\4.4.3\include\QtXml;..\..\..\Qt\4.4.3\include\QtXml;..\..\..\Qt\4.4.3\include;..\addon\doxywizard;c:\Qt\4.4.3\include\ActiveQt;..\addon\doxywizard\moc;..\addon\doxywizard;.;..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AssemblerListingLocation>obj\</AssemblerListingLocation>
+      <ObjectFileName>obj\</ObjectFileName>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>c:\Qt\4.4.3\lib\qtmaind.lib;c:\Qt\4.4.3\lib\QtXmld.lib;c:\Qt\4.4.3\lib\QtGuid.lib;c:\Qt\4.4.3\lib\QtCored.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;winspool.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>debug\doxywizard.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>c:\Qt\4.4.3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 -Zm200 -w34100 -w34189 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Qt\4.4.3\include\QtCore;..\..\..\Qt\4.4.3\include\QtCore;..\..\..\Qt\4.4.3\include\QtGui;..\..\..\Qt\4.4.3\include\QtGui;..\..\..\Qt\4.4.3\include\QtXml;..\..\..\Qt\4.4.3\include\QtXml;..\..\..\Qt\4.4.3\include;..\addon\doxywizard;c:\Qt\4.4.3\include\ActiveQt;..\addon\doxywizard\moc;..\addon\doxywizard;.;..\..\..\Qt\4.4.3\mkspecs\win32-msvc2008;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_DEBUG;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AssemblerListingLocation>obj\</AssemblerListingLocation>
+      <ObjectFileName>obj\</ObjectFileName>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_DEBUG;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>c:\Qt\4.4.3\lib\qtmain.lib;c:\Qt\4.4.3\lib\QtXml.lib;c:\Qt\4.4.3\lib\QtGui.lib;c:\Qt\4.4.3\lib\QtCore.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;winspool.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin\doxywizard.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>c:\Qt\4.4.3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\addon\doxywizard\doxywizard.cpp" />
+    <ClCompile Include="..\addon\doxywizard\expert.cpp" />
+    <ClCompile Include="..\addon\doxywizard\inputbool.cpp" />
+    <ClCompile Include="..\addon\doxywizard\inputint.cpp" />
+    <ClCompile Include="..\addon\doxywizard\inputstring.cpp" />
+    <ClCompile Include="..\addon\doxywizard\inputstrlist.cpp" />
+    <ClCompile Include="..\src\version.cpp" />
+    <ClCompile Include="..\addon\doxywizard\wizard.cpp" />
+    <ClCompile Include="config_lex.cpp" />
+    <ClCompile Include="moc\moc_doxywizard.cpp" />
+    <ClCompile Include="moc\moc_expert.cpp" />
+    <ClCompile Include="moc\moc_helplabel.cpp" />
+    <ClCompile Include="moc\moc_inputbool.cpp" />
+    <ClCompile Include="moc\moc_inputint.cpp" />
+    <ClCompile Include="moc\moc_inputstring.cpp" />
+    <ClCompile Include="moc\moc_inputstrlist.cpp" />
+    <ClCompile Include="moc\moc_wizard.cpp" />
+    <ClCompile Include="rcc\qrc_doxywizard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\addon\doxywizard\config.h" />
+    <CustomBuild Include="..\addon\doxywizard\doxywizard.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\doxywizard.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\doxywizard.h -o moc\moc_doxywizard.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\doxywizard.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_doxywizard.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\doxywizard.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\doxywizard.h -o moc\moc_doxywizard.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\doxywizard.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_doxywizard.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\addon\doxywizard\expert.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\expert.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\expert.h -o moc\moc_expert.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\expert.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_expert.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\expert.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\expert.h -o moc\moc_expert.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\expert.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_expert.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\addon\doxywizard\helplabel.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\helplabel.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\helplabel.h -o moc\moc_helplabel.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\helplabel.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_helplabel.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\helplabel.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\helplabel.h -o moc\moc_helplabel.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\helplabel.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_helplabel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\addon\doxywizard\inputbool.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\inputbool.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputbool.h -o moc\moc_inputbool.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\inputbool.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_inputbool.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\inputbool.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputbool.h -o moc\moc_inputbool.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\inputbool.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_inputbool.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\addon\doxywizard\inputint.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\inputint.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputint.h -o moc\moc_inputint.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\inputint.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_inputint.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\inputint.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputint.h -o moc\moc_inputint.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\inputint.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_inputint.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\addon\doxywizard\inputstring.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\inputstring.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputstring.h -o moc\moc_inputstring.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\inputstring.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_inputstring.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\inputstring.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputstring.h -o moc\moc_inputstring.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\inputstring.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_inputstring.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\addon\doxywizard\inputstrlist.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\inputstrlist.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputstrlist.h -o moc\moc_inputstrlist.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\inputstrlist.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_inputstrlist.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\inputstrlist.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\inputstrlist.h -o moc\moc_inputstrlist.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\inputstrlist.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_inputstrlist.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\addon\doxywizard\version.h" />
+    <CustomBuild Include="..\addon\doxywizard\wizard.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\addon\doxywizard\wizard.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\wizard.h -o moc\moc_wizard.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\wizard.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_wizard.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\addon\doxywizard\wizard.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtCore" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtGui" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include\QtXml" -I"..\..\..\Qt\4.4.3\include" -I"..\addon\doxywizard" -I"c:\Qt\4.4.3\include\ActiveQt" -I"..\addon\doxywizard\moc" -I"..\addon\doxywizard" -I"." -I..\..\..\Qt\4.4.3\mkspecs\win32-msvc2005 -D_MSC_VER=1400 -DWIN32 ..\addon\doxywizard\wizard.h -o moc\moc_wizard.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\wizard.h;C:\Qt\4.4.3\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_wizard.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\addon\doxywizard\config.l">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Lex ..\addon\doxywizard\config.l</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">flex -Pconfig ..\addon\doxywizard\config.l &amp;&amp;   del config_lex.cpp &amp;&amp;   move lex.config.c config_lex.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\config.l;flex;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">config_lex.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Lex ..\addon\doxywizard\config.l</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">flex -Pconfig ..\addon\doxywizard\config.l &amp;&amp;   del config_lex.cpp &amp;&amp;   move lex.config.c config_lex.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\config.l;flex;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">config_lex.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\addon\doxywizard\doxywizard.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC ..\addon\doxywizard\doxywizard.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.4.3\bin\rcc.exe -name doxywizard ..\addon\doxywizard\doxywizard.qrc -o rcc\qrc_doxywizard.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\addon\doxywizard\doxywizard.qrc;C:\Qt\4.4.3\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rcc\qrc_doxywizard.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC ..\addon\doxywizard\doxywizard.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.4.3\bin\rcc.exe -name doxywizard ..\addon\doxywizard\doxywizard.qrc -o rcc\qrc_doxywizard.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\addon\doxywizard\doxywizard.qrc;C:\Qt\4.4.3\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rcc\qrc_doxywizard.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\addon\doxywizard\doxywizard.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
